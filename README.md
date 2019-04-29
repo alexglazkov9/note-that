@@ -33,7 +33,16 @@ source venv/bin/activate     # or ./venv/Scripts/activate.ps1
 pip install -r requirements.txt
 ```
 
-#### Start local server
+#### Run migrations:
+
+From ```server``` folder run:
+```
+flask db init
+flask db migrate
+flask db upgrade
+```
+
+#### Start local server:
 
 From ```client``` folder run:
 ```
